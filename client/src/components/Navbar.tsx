@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
 
         <div className="flex-1 flex justify-center md:justify-start">
           <span className="font-bold text-[24px] md:text-3xl text-gray-800 mt-4 md:mt-[52px] ml-0 md:ml-[183px] font-serif">
-            ARTHUB.
+            ARTHUB
           </span>
         </div>
 
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
         <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex flex-col">
           <div className="bg-white w-full flex items-center justify-between px-4 py-4">
             <span className="font-bold text-[24px] mt-[15px] ml-2.5 text-gray-800 font-serif">
-              ARTHUB.
+              ARTHUB
             </span>
 
             <button
