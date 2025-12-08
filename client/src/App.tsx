@@ -1,13 +1,17 @@
-
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { appRoutes } from './routes';
+
 
 function App() {
   return (
-    <>
-      <Navbar />
-      {/* Add your page content here */}
-    </>
+    <BrowserRouter>
+      <Routes>
+        {appRoutes.map(route => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
