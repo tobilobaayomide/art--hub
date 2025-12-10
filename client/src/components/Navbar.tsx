@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { navLinks, navIcons } from "../data/index.tsx";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -6,8 +6,12 @@ import { TfiClose } from "react-icons/tfi";
 import { BiSolidMessageSquare } from "react-icons/bi";
 import "../App.css";
 
-const Navbar: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+interface NavbarProps {
+  menuOpen: boolean;
+  setMenuOpen: (open: boolean) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
   const handleIconClick = () => {
     window.location.href = "/Drop";
   };
@@ -22,7 +26,7 @@ const Navbar: React.FC = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [menuOpen]);
+  }, [menuOpen, setMenuOpen]);
 
   return (
     <nav className="w-full bg-white px-4 py-3 flex items-center justify-between md:px-8 md:py-4 relative">
