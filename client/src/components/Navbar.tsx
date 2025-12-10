@@ -142,7 +142,10 @@ const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
 
             <div className="absolute bottom-15 right-10">
               <div className="w-17 h-17 rounded-full bg-[#3341C1] flex items-center justify-center shadow-lg">
-                <BiSolidMessageSquare className="text-white text-4xl" style={{ filter: "drop-shadow(0 0 0 white)" }} />
+                <BiSolidMessageSquare
+                  className="text-white text-4xl"
+                  style={{ filter: "drop-shadow(0 0 0 white)" }}
+                />
               </div>
             </div>
           </div>
