@@ -17,3 +17,10 @@ export const navIcons: IconT[] = [
   { icon: <TbGardenCart />, label: "Cart" },
   { icon: <IoNotificationsOutline />, label: "Notifications" },
 ];
+
+export const footLinks: LinkT[] = [
+  { name: "Blog", path: "/#" },
+  { name: "Wallets", path: "/#" },
+  { name: "Rates", path: "/#" },
+  { name: "High bids", path: "/#" },
+];
