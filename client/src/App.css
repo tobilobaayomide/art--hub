@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@700&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 @keyframes underline {
   from {
@@ -14,6 +16,13 @@
   transform-origin: left;
 }
 
+.hide-scrollbar {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
 
 #root {
   width: 100%;
