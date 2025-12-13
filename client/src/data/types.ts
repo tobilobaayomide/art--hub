@@ -18,3 +18,11 @@ export type EllipseT = {
   className: string;
   style: React.CSSProperties;
 };
+
+export type ProductT = {
+  img: string;
+  title: string;
+  desc: string;
+};
+
+export type CreatorT = string; 
