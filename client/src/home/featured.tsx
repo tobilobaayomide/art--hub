@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { LiaArrowRightSolid } from "react-icons/lia";
 import { creators, products } from "../data";
 
-// Desktop hoverable product image
+
 const ProductImageHover: React.FC<{ src: string }> = ({ src }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -49,9 +49,8 @@ const Featured: React.FC = () => (
     </h2>
     <hr className="hidden md:block w-[calc(100%-240px)] ml-[120px] mr-[120px] mb-15 border-t border-[#333333]" />
 
-    {/* Desktop Layout */}
+  
     <div className="hidden md:block w-full">
-      {/* Product 1 */}
       <div className="flex flex-wrap ml-[120px] items-center gap-12">
         <ProductImageHover src={products[0].img} />
         <div className="flex-1 mr-[120px]">
@@ -93,7 +92,6 @@ const Featured: React.FC = () => (
           </div>
         </div>
       </div>
-      {/* Product 2 */}
       <hr className="w-[calc(100%-240px)] ml-[120px] mr-[120px] mt-15 mb-15 border-t border-[#333333]" />
       <div className="flex flex-wrap flex-row-reverse mr-[120px] items-center gap-12">
         <ProductImageHover src={products[1].img} />
@@ -136,7 +134,6 @@ const Featured: React.FC = () => (
           </div>
         </div>
       </div>
-      {/* Product 3 */}
       <hr className="w-[calc(100%-240px)] ml-[120px] mr-[120px] mt-15 mb-15 border-t border-[#333333]" />
       <div className="flex flex-wrap ml-[120px] items-center gap-12">
         <ProductImageHover src={products[2].img} />
@@ -181,7 +178,6 @@ const Featured: React.FC = () => (
       </div>
     </div>
 
-    {/* Mobile Layout */}
     <div className="block md:hidden w-full px-5">
       {products.map((product, idx) => (
         <div key={idx} className="mb-14">
@@ -192,7 +188,7 @@ const Featured: React.FC = () => (
               className="w-full h-full object-cover"
               style={{ filter: "brightness(0.5)" }}
             />
-            {/* Title centered at top, button at bottom right */}
+            
             <span
               className="absolute left-1/2 transform -translate-x-1/2 top-6 text-white text-[30px] font-bold clash-bold text-center w-full px-2"
               style={{ zIndex: 2 }}
@@ -234,7 +230,7 @@ const Featured: React.FC = () => (
               64 major creators
             </span>
           </div>
-          {/* Line under each product section on mobile, aligned to the start */}
+
           <hr className="block md:hidden w-[180px] border-[0.5px] border-[#333333] -ml-2.5 my-6" />
         </div>
       ))}
