@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
       </p>
 
     
-      <div className="w-full mx-auto mb-20 hidden md:block">
+      <div className="w-full mx-auto mb-10 hidden md:block">
         <Slider {...sliderSettings}>
           {desktopImages.map((img, idx) => (
             <div key={idx} className="flex justify-center min-w-[358px] max-w-[358px]">

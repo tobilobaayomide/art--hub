@@ -119,3 +119,36 @@ export const mobileEllipses: EllipseT[] = [
     },
   },
 ];
+
+
+import productImg from "../assets/featuredproducts/product.jpg";
+import productImg2 from "../assets/featuredproducts/product2.jpg";
+import productImg3 from "../assets/featuredproducts/product3.jpg";
+import creator1 from "../assets/featuredproducts/creator.png";
+import creator2 from "../assets/featuredproducts/creator2.png";
+import creator3 from "../assets/featuredproducts/creator3.png";
+import creator4 from "../assets/featuredproducts/creator4.png";
+import creator5 from "../assets/featuredproducts/creator5.png";
+
+export const creators = [creator1, creator2, creator3, creator4, creator5];
+
+export const products = [
+  {
+    img: productImg,
+    title: "The Boolean Egyptian",
+    desc:
+      "Discover the unique story and artistry behind The Boolean Egyptian, a featured product that blends tradition with modern creativity. This piece stands out for its craftsmanship and cultural significance.",
+  },
+  {
+    img: productImg2,
+    title: "Are We There Yet?",
+    desc:
+      "Discover the unique story and artistry behind Are We There Yet? a featured product that blends tradition with modern creativity. This piece stands out for its craftsmanship and cultural significance.",
+  },
+  {
+    img: productImg3,
+    title: "Oloibiri 1997",
+    desc:
+      "Discover the unique story and artistry behind Oloibiri 1997, a featured product that blends tradition with modern creativity. This piece stands out for its craftsmanship and cultural significance.",
+  },
+];

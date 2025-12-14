@@ -11,6 +11,42 @@
   }
 }
 
+.satoshi {
+  font-family: 'Satoshi', Arial, sans-serif;
+  font-weight: 200;
+}
+.satoshi-normal {
+  font-family: 'Satoshi', Arial, sans-serif;
+  font-weight: 300;
+}
+.satoshi-medium {
+  font-family: 'Satoshi', Arial, sans-serif;
+  font-weight: 400;
+}
+.satoshi-bold {
+  font-family: 'Satoshi', Arial, sans-serif;
+  font-weight: 500;
+}
+
+
+.clash {
+  font-family: 'Clash Display', Arial, sans-serif;
+}
+.clash-normal {
+  font-family: 'Clash Display', Arial, sans-serif;
+  font-weight: 400;
+}
+.clash-medium {
+  font-family: 'Clash Display', Arial, sans-serif;
+  font-weight: 500;
+}
+.clash-bold {
+  font-family: 'Clash Display', Arial, sans-serif;
+  font-weight: 600;
+}
+
+
+
 .animate-underline {
   animation: underline 0.3s ease-out forwards;
   transform-origin: left;
