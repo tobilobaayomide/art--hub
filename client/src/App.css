@@ -11,6 +11,23 @@
   }
 }
 
+
+@keyframes creator-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.creator-fade-in {
+  animation: creator-fade-in 3s ease-out 1ms forwards;
+}
+
+
 .satoshi {
   font-family: 'Satoshi', Arial, sans-serif;
   font-weight: 200;
@@ -31,6 +48,7 @@
 
 .clash {
   font-family: 'Clash Display', Arial, sans-serif;
+  font-weight: 200;
 }
 .clash-normal {
   font-family: 'Clash Display', Arial, sans-serif;
@@ -44,6 +62,11 @@
   font-family: 'Clash Display', Arial, sans-serif;
   font-weight: 600;
 }
+.clash-extrabold {
+  font-family: 'Clash Display', Arial, sans-serif;
+  font-weight: 700;
+}
+
 
 .bellefair {
   font-family: 'Bellefair', Arial, sans-serif;
