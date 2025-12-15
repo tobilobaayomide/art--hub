@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../home/hero";
 import Featured from "../home/featured";
+import Auctions from "../home/auctions";
 import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <main className="flex-1">
         <Hero /> 
         <Featured />
+        <Auctions />
       </main>
       <Footer menuOpen={menuOpen} />
     </div>
