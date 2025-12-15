@@ -11,7 +11,7 @@ const Footer: React.FC<{ menuOpen?: boolean }> = ({ menuOpen }) => {
   return (
     <footer className="bg-white text-black py-8 px-4 w-full shadow-lg z-50">
       
-      <div className="mb-8 flex justify-center">
+      <div className="mb-8 mt-5 md:mt-20 flex justify-center">
         <div className="bg-white border border-[#333333] max-w-[1332px] w-full h-80 flex-col justify-center items-center shadow-md px-8 hidden md:flex">
           <h2
             className="text-[30.21px] mb-2"
