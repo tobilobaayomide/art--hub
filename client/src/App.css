@@ -45,7 +45,10 @@
   font-weight: 600;
 }
 
-
+.bellefair {
+  font-family: 'Bellefair', Arial, sans-serif;
+  font-weight: 400;
+}
 
 .animate-underline {
   animation: underline 0.3s ease-out forwards;
