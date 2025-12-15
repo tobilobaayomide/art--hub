@@ -26,3 +26,13 @@ export type ProductT = {
 };
 
 export type CreatorT = string; 
+
+export type AuctionCardT = {
+  image: string;
+  number: string;
+  title: [string, string];
+  bullet: boolean;
+  start: string;
+  description: string;
+  loader: number;
+};

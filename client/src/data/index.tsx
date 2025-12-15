@@ -1,6 +1,6 @@
 export * from './types';
 
-import type { LinkT, IconT, HeroImageT, EllipseT } from './types';
+import type { LinkT, IconT, HeroImageT, EllipseT, AuctionCardT } from './types';
 import { RiSearchLine } from 'react-icons/ri';
 import { TbGardenCart } from 'react-icons/tb';
 import { IoNotificationsOutline } from 'react-icons/io5';
@@ -150,5 +150,33 @@ export const products = [
     title: "Oloibiri 1997",
     desc:
       "Discover the unique story and artistry behind Oloibiri 1997, a featured product that blends tradition with modern creativity. This piece stands out for its craftsmanship and cultural significance.",
+  },
+];
+
+
+import auctionImg from "../assets/auctioncards/auction.jpg";
+import auctionImg2 from "../assets/auctioncards/auction2.jpg";
+
+
+export const auctionCards: AuctionCardT[] = [
+  {
+    image: auctionImg,
+    number: "01",
+    title: ["MONALISA REDEFINED", "IN STYLE."],
+    bullet: true,
+    start: "START ON : 08:00 GTS . MONDAY",
+    description:
+      "GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR HIGHEST AND LOWEST BIDS.",
+    loader: 60,
+  },
+  {
+    image: auctionImg2,
+    number: "02",
+    title: ["THE STARRY NIGHT", "EXPERIENCE."],
+    bullet: true,
+    start: "START ON : 10:30 GTS . FRIDAY",
+    description:
+      "DISCOVER THE MAGIC OF POST-IMPRESSIONISM WITH AN EXCLUSIVE SHOWCASE OF MASTERPIECES. MEET RENOWNED ARTISTS AND PLACE YOUR BIDS ON RARE, INSPIRING WORKS FROM AROUND THE GLOBE.",
+    loader: 35,
   },
 ];
