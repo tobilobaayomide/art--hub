@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { LiaArrowRightSolid } from "react-icons/lia";
 import { creators, products } from "../data";
 
+
 const ProductImageHover: React.FC<{ src: string }> = ({ src }) => {
   const [hovered, setHovered] = useState(false);
 
@@ -48,8 +49,8 @@ const Featured: React.FC = () => (
     </h2>
     <hr className="hidden md:block w-[calc(100%-240px)] ml-[120px] mr-[120px] mb-15 border-t border-[#333333]" />
 
+  
     <div className="hidden md:block w-full">
-      {/* Product 1 */}
       <div className="flex flex-wrap ml-[120px] items-center gap-12">
         <ProductImageHover src={products[0].img} />
         <div className="flex-1 mr-[120px]">
@@ -191,6 +192,7 @@ const Featured: React.FC = () => (
               style={{ filter: "brightness(0.5)" }}
             />
 
+            
             <span
               className="absolute left-1/2 transform -translate-x-1/2 top-6 text-white text-[30px] font-bold clash-bold text-center w-full px-2"
               style={{ zIndex: 2 }}
@@ -233,6 +235,7 @@ const Featured: React.FC = () => (
             </span>
           </div>
           
+
           <hr className="block md:hidden w-[180px] border-[0.5px] border-[#333333] -ml-2.5 my-6" />
         </div>
       ))}
