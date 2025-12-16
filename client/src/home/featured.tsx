@@ -252,7 +252,7 @@ const Featured: React.FC = () => (
           </div>
           
 
-          <hr className="block md:hidden w-[180px] border-[0.5px] border-[#333333] -ml-2.5 my-6" />
+          <hr className="block md:hidden w-[180px] border-[0.5px] border-main -ml-2.5 my-6" />
         </div>
       ))}
     </div>
