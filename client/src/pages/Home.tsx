@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../home/hero";
 import Featured from "../home/featured";
 import Auctions from "../home/auctions";
+import Creators from "../home/creators";
 import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
         <Hero /> 
         <Featured />
         <Auctions />
+        <Creators />
       </main>
       <Footer menuOpen={menuOpen} />
     </div>
