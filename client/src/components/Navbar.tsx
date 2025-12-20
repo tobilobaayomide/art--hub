@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { navLinks, navIcons } from "../data/index.tsx";
+import { navLinks, navIcons } from "../data";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TfiClose } from "react-icons/tfi";
 import { BiSolidMessageSquare } from "react-icons/bi";
 import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
+import type { Theme } from "../data";
 import "../App.css";
-
-type Theme = "light" | "dark";
 
 interface NavbarProps {
   menuOpen: boolean;
@@ -152,7 +151,7 @@ const Navbar: React.FC<NavbarProps> = ({
                       display: "block",
                       textDecoration: "none",
                       textUnderlineOffset: isActive ? "8px" : undefined,
-                      color: isActive ? undefined : undefined, 
+                      color: isActive ? undefined : undefined,
                       fontSize: "22px",
                       fontWeight: 400,
                       transition: "color 0.2s",
