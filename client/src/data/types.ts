@@ -37,4 +37,5 @@ export type AuctionCardT = {
   loader: number;
 };
 
+
 export type Theme = "light" | "dark";
