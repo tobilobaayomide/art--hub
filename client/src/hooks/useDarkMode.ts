@@ -21,10 +21,17 @@ export default function useDarkMode(): [Theme, (t: Theme) => void] {
 
   useEffect(() => {
     if (localStorage.getItem("theme")) return;
-    const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    const handler = () => setTheme(mq.matches ? "dark" : "light");
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
+    const colorSchemeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    const handleColorSchemeChange = () =>
+      setTheme(colorSchemeMediaQuery.matches ? "dark" : "light");
+    colorSchemeMediaQuery.addEventListener("change", handleColorSchemeChange);
+    return () =>
+      colorSchemeMediaQuery.removeEventListener(
+        "change",
+        handleColorSchemeChange
+      );
   }, []);
 
   useEffect(() => {
